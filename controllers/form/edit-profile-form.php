@@ -38,14 +38,11 @@
             <div class="col-md-6">
                 <label for="">Username</label>
                 <div class="form-group float-label-control">
-                    <a href="http://<?php echo $rws['domain_websiteaddress'];?>/<?php echo $rws['user_username'];?>">        
                         <div class="input-group">
-                            <span class="input-group-addon">http://<?php echo $rws['domain_websiteaddress'];?>/</span>
                             <fieldset disabled> 
                                 <input type="text" class="form-control" placeholder="<?php echo $rws['user_username'];?>" name="user_username" value="<?php echo $rws['user_username'];?>" id="disabledTextInput" autocomplete="off">
                             </fieldset>  
                         </div>
-                    </a>
                 </div>
                 <div class="form-group float-label-control">
                     <label for="">Password</label>
