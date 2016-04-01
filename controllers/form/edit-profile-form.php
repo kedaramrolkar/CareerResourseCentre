@@ -1,22 +1,47 @@
 <form action="components/update-profile.php" method="post" enctype="multipart/form-data" id="UploadForm">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#general" data-toggle="tab">General</a></li>
+      <li class="active"><a href="#PrimaryInformation" data-toggle="tab">Primary Information</a></li>
       <li><a href="#personal" data-toggle="tab">Personal</a></li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
-        <div class="tab-pane fade in active" id="general">         
+        <div class="tab-pane fade in active" id="PrimaryInformation">         
             <div class="col-md-6">
+		<div class="form-group float-label-control">                      
+                    <button type="button" onclick="alert('Hello world!')">in</button>
+		    <button type="button" onclick="alert('Hello world!')">f</button>
+                    <label for="">Import Profile from Online Social Network</label>
+                </div>
+
                 <div class="form-group float-label-control">                      
-                    <label for="">First Name</label>
-                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_firstname'];?>" name="user_firstname" value="<?php echo $rws['user_firstname'];?>">
-                </div>
+                    <label for="">Name</label>
+                    <input type="text" class="form-control">
+</div>
+<div class="form-group float-label-control">
+                    <label for="">Email</label> 
+                    <input type="text" class="form-control">
+                </div> 
+
                 <div class="form-group float-label-control">  
-                    <label for="">Last Name</label>
-                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_lastname'];?>" name="user_lastname" value="<?php echo $rws['user_lastname'];?>">
+                    <label for="">Current Address</label>
+                    <input type="text" class="form-control">
                 </div>
-                <div class="form-group float-label-control">
+<div>	
+<label for="">Country</label>	
+<select>
+  <option value="US">US</option>
+  <option value="INDIA">INDIA</option>
+  <option value="UK">UK</option>
+  <option value="CANADA">CANADA</option>
+</select>
+</div>
+<div class="form-group float-label-control">  
+                    <label for="">Permanent Address</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <!--<div class="form-group float-label-control">
                     <label for="">Avatar</label>
                     <input name="ImageFile" type="file" id="uploadFile"/>
                     <div class="col-md-6">
@@ -34,8 +59,19 @@
                         </div>
                     </div>
                 </div>
+-->
             </div>  
             <div class="col-md-6">
+		<div>
+                    <label for="">Id</label>
+                    <input type="text" class="form-control">
+		</div>
+
+<div>
+                    <label for="">Ph No</label>
+                    <input type="text" class="form-control">
+		</div>
+
                 <label for="">Username</label>
                 <div class="form-group float-label-control">
                         <div class="input-group">
@@ -48,10 +84,7 @@
                     <label for="">Password</label>
                     <input type="password" class="form-control" placeholder="<?php echo $rws['user_password'];?>" name="user_password" value="<?php echo $rws['user_password'];?>">
                 </div>
-                <div class="form-group float-label-control">
-                    <label for="">Email</label> 
-                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_email'];?>" name="user_email" value="<?php echo $rws['user_email'];?>">
-                </div>  
+                 
             </div>
         </div>
         <div class="tab-pane fade" id="personal">
