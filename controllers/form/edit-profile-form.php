@@ -6,13 +6,15 @@
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
-        <div class="tab-pane fade in active" id="PrimaryInformation">         
-            <div class="col-md-6">
-		<div class="form-group float-label-control">                      
+        <div class="tab-pane fade in active" id="PrimaryInformation">  
+    </br>
+<div class="form-group float-label-control">                      
                     <button type="button" onclick="alert('Hello world!')">in</button>
 		    <button type="button" onclick="alert('Hello world!')">f</button>
                     <label for="">Import Profile from Online Social Network</label>
-                </div>
+                </div>   
+            <div class="col-md-6">
+		
 
                 <div class="form-group float-label-control">                      
                     <label for="">Name</label>
@@ -25,9 +27,8 @@
 
                 <div class="form-group float-label-control">  
                     <label for="">Current Address</label>
-                    <input type="text" class="form-control">
-                </div>
-<div>	
+                    <textarea id="txtArea" rows="2" ></textarea>
+                &nbsp;&nbsp;&nbsp;
 <label for="">Country</label>	
 <select>
   <option value="US">US</option>
@@ -36,10 +37,20 @@
   <option value="CANADA">CANADA</option>
 </select>
 </div>
-<div class="form-group float-label-control">  
-                    <label for="">Permanent Address</label>
-                    <input type="text" class="form-control">
+			<div class="form-group float-label-control">  
+                    <label for="">Gender</label>
+                    <input type="radio" name="gender" value="male"> Male
+  		    <input type="radio" name="gender" value="female"> Female
                 </div>
+		
+		<div>	
+<label for="">Veteran Status</label>	
+<select>
+  <option value="no">No. I am not a Veteran</option>
+  <option value="yes">Yes. I am a Veteran</option>
+  <option value="disclose">Do not want to disclose</option>
+</select>
+</div>
 
                 <!--<div class="form-group float-label-control">
                     <label for="">Avatar</label>
@@ -62,29 +73,45 @@
 -->
             </div>  
             <div class="col-md-6">
-		<div>
+		<div class="form-group float-label-control">
                     <label for="">Id</label>
                     <input type="text" class="form-control">
 		</div>
 
-<div>
+<div class="form-group float-label-control">
                     <label for="">Ph No</label>
                     <input type="text" class="form-control">
 		</div>
-
-                <label for="">Username</label>
-                <div class="form-group float-label-control">
-                        <div class="input-group">
-                            <fieldset disabled> 
-                                <input type="text" class="form-control" placeholder="<?php echo $rws['user_username'];?>" name="user_username" value="<?php echo $rws['user_username'];?>" id="disabledTextInput" autocomplete="off">
-                            </fieldset>  
-                        </div>
+<div class="form-group float-label-control">  
+                    <label for="">Permanent Address</label>
+                    <textarea id="txtArea" rows="2" ></textarea>
+&nbsp;&nbsp;&nbsp;
+		<label for="">Country</label>	
+<select>
+  <option value="US">US</option>
+  <option value="INDIA">INDIA</option>
+  <option value="UK">UK</option>
+  <option value="CANADA">CANADA</option>
+</select>
                 </div>
-                <div class="form-group float-label-control">
-                    <label for="">Password</label>
-                    <input type="password" class="form-control" placeholder="<?php echo $rws['user_password'];?>" name="user_password" value="<?php echo $rws['user_password'];?>">
-                </div>
-                 
+	
+			<div class="form-group float-label-control">	
+<label for="">Disability</label>	
+<select>
+  <option value="no">No. I do not have Disability</option>
+  <option value="yes">Yes. I have a Disability</option>
+  <option value="disclose">I do not want to disclose</option>
+</select>
+</div>
+<div>	
+<label for="">Visa Status</label>	
+<select>
+  <option value="F1">F1</option>
+  <option value="F2">F2</option>
+  <option value="G1">G1</option>
+  <option value="G2">G2</option>
+</select>
+</div>                 
             </div>
         </div>
         <div class="tab-pane fade" id="personal">
