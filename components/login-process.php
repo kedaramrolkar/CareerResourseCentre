@@ -20,7 +20,7 @@
             header("location: authentication-check.php");
             exit();
         }
-        $sql="SELECT user_username,user_password FROM user WHERE user_username='$username'AND user_password='$password'";
+        $sql="SELECT user_username,user_password FROM user WHERE user_username='$username' AND user_password='$password'";
         $result=  mysqli_query($database,$sql) or die(mysqli_errno());
         $trws= mysqli_num_rows($result);
         if($trws==1){

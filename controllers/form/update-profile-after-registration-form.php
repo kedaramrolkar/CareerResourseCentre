@@ -25,7 +25,7 @@
     $user_username =  $_GET['user_username'];
 ?>     
     <br>                 
-    <div class="col-md-12 submit">           
+    <div class="submit">           
         <center>
             <button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />Continue</button>
         </center>

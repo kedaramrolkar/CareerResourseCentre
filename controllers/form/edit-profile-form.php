@@ -9,9 +9,9 @@
     </ul>
 	
     <!-- Tab panes -->
+	</br>
     <div class="tab-content">
         <div class="tab-pane fade in active" id="PrimaryInformation">  
-			</br>
 			<div class="form-group float-label-control">                      
 				<button type="button" onclick="alert('Hello world!')">in</button>
 				<button type="button" onclick="alert('Hello world!')">f</button>
@@ -20,102 +20,85 @@
 			<div class="col-md-6">
 				<div class="form-group float-label-control">                      
 					<label for="">Name</label>
-					<input type="text" class="form-control" name="user_name">
+					<input type="text" class="form-control" name="user_name" placeholder="<?php echo $rws['user_name'];?>" value="<?php echo $rws['user_name'];?>">
 				</div>
 				<div class="form-group float-label-control">
 					<label for="">Email</label> 
-					<input type="text" class="form-control" name="user_email">
+					<input type="text" class="form-control" name="user_email" placeholder="<?php echo $rws['user_email'];?>" value="<?php echo $rws['user_email'];?>">
 				</div> 
 				<div class="form-group float-label-control">  
 					<label for="">Current Address</label>
-					<textarea rows="2"  name="user_currentaddress" ></textarea>
+					<textarea rows="2"  name="user_currentaddress" placeholder="<?php echo $rws['user_currentaddress'];?>" value="<?php echo $rws['user_currentaddress'];?>"><?php echo $rws['user_currentaddress'];?></textarea>
 					&nbsp;&nbsp;&nbsp;
 					<label for="">Country</label>	
-					<select name="user_currentcountry">
-						<option value="US">US</option>
-						<option value="INDIA">INDIA</option>
-						<option value="UK">UK</option>
-						<option value="CANADA">CANADA</option>
+					<select name="user_currentcountry" >
+						<option value="US" <?php if($rws['user_currentcountry'] == 'US'){echo("selected");}?>>US</option>
+						<option value="INDIA" <?php if($rws['user_currentcountry'] == 'INDIA'){echo("selected");}?>>INDIA</option>
+						<option value="UK" <?php if($rws['user_currentcountry'] == 'UK'){echo("selected");}?>>UK</option>
+						<option value="CANADA" <?php if($rws['user_currentcountry'] == 'CANADA'){echo("selected");}?>>CANADA</option>
 					</select>
 				</div>
 				<div class="form-group float-label-control">  
 					<label for="">Gender</label>
-					<input type="radio" name="user_gender" value="male"> Male
-					<input type="radio" name="user_gender" value="female"> Female
+					<input type="radio" name="user_gender" value="male" <?php if($rws['user_gender'] == 'male'){echo("checked");}?>> Male
+					<input type="radio" name="user_gender" value="female" <?php if($rws['user_gender'] == 'female'){echo("checked");}?>> Female
 				</div>
 				<div>	
 					<label for="">Veteran Status</label>	
 					<select name="user_veteran" >
-						<option value="no">No. I am not a Veteran</option>
-						<option value="yes">Yes. I am a Veteran</option>
-						<option value="disclose">Do not want to disclose</option>
+						<option value="no" <?php if($rws['user_veteran'] == 'no'){echo("selected");}?>>No. I am not a Veteran</option>
+						<option value="yes" <?php if($rws['user_veteran'] == 'yes'){echo("selected");}?>>Yes. I am a Veteran</option>
+						<option value="disclose" <?php if($rws['user_veteran'] == 'disclose'){echo("selected");}?>>Do not want to disclose</option>
 					</select>
 				</div>
-
-                <!--<div class="form-group float-label-control">
-                    <label for="">Avatar</label>
-                    <input name="ImageFile" type="file" id="uploadFile"/>
-                    <div class="col-md-6">
-                        <div class="shortpreview">
-                            <label for="">Previous Avatar </label>
-                            <br> 
-                            <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="shortpreview" id="uploadImagePreview">
-                            <label for="">Current Uploaded Avatar </label>
-                            <br> 
-                            <div id="imagePreview"></div>
-                        </div>
-                    </div>
-                </div>
--->
 			</div>  
 			<div class="col-md-6">
 				<div class="form-group float-label-control">
 					<label >Id</label>
-					<input name="user_ufid" type="text" class="form-control">
+					<input name="user_ufid" type="text" class="form-control" placeholder="<?php echo $rws['user_ufid'];?>" value="<?php echo $rws['user_ufid'];?>">
 				</div>
 				<div class="form-group float-label-control">
 					<label >Ph No</label>
-					<input name="user_phno" type="text" class="form-control">
+					<input name="user_phno" type="text" class="form-control" placeholder="<?php echo $rws['user_phno'];?>" value="<?php echo $rws['user_phno'];?>">
 				</div>
 				<div class="form-group float-label-control">  
 					<label>Permanent Address</label>
-					<textarea name="user_permanentaddress" rows="2" ></textarea>
+					<textarea name="user_permanentaddress" rows="2" placeholder="<?php echo $rws['user_permanentaddress'];?>" value="<?php echo $rws['user_permanentaddress'];?>"><?php echo $rws['user_permanentaddress'];?></textarea>
 					&nbsp;&nbsp;&nbsp;
 					<label >Country</label>	
 					<select  name="user_permanentcountry" >
-						<option value="US">US</option>
-						<option value="INDIA">INDIA</option>
-						<option value="UK">UK</option>
-						<option value="CANADA">CANADA</option>
+						<option value="US" <?php if($rws['user_permanentcountry'] == 'US'){echo("selected");}?>>US</option>
+						<option value="INDIA" <?php if($rws['user_permanentcountry'] == 'INDIA'){echo("selected");}?>>INDIA</option>
+						<option value="UK" <?php if($rws['user_permanentcountry'] == 'UK'){echo("selected");}?>>UK</option>
+						<option value="CANADA" <?php if($rws['user_permanentcountry'] == 'CANADA'){echo("selected");}?>>CANADA</option>
 					</select>
 				</div>
 				<div class="form-group float-label-control">	
 					<label >Disability</label>	
 					<select  name="user_disability">
-						<option value="no">No. I do not have Disability</option>
-						<option value="yes">Yes. I have a Disability</option>
-						<option value="disclose">I do not want to disclose</option>
+						<option value="no" <?php if($rws['user_disability'] == 'np'){echo("selected");}?>>No. I do not have Disability</option>
+						<option value="yes" <?php if($rws['user_disability'] == 'yes'){echo("selected");}?>>Yes. I have a Disability</option>
+						<option value="disclose" <?php if($rws['user_disability'] == 'disclose'){echo("selected");}?>>I do not want to disclose</option>
 					</select>
 				</div>
 				<div>	
 					<label for="">Visa Status</label>	
 					<select name="user_visa">
-						<option value="F1">F1</option>
-						<option value="F2">F2</option>
-						<option value="G1">G1</option>
-						<option value="G2">G2</option>
+						<option value="F1" <?php if($rws['user_visa'] == 'F1'){echo("selected");}?>>F1</option>
+						<option value="F2" <?php if($rws['user_visa'] == 'F2'){echo("selected");}?>>F2</option>
+						<option value="G1" <?php if($rws['user_visa'] == 'G1'){echo("selected");}?>>G1</option>
+						<option value="G2" <?php if($rws['user_visa'] == 'G2'){echo("selected");}?>>G2</option>
 					</select>
 				</div>                 
 			</div>
 		</div>
-		<div class="tab-pane fade" id="personal">
+		<div class="tab-pane fade" id="resume">
 			<div class="form-group float-label-control">                      
-				<label for="">Import Resume from Computer</label>
-				<form method="post" enctype="multipart/form-data"> 
+				<div class="form-group float-label-control">
+					<label for="">Import Resume from Computer</label>
+					<input name="upload" type="submit" class="box" id="upload" value=" Upload ">
+				</div>
+			<!--<form method="post" enctype="multipart/form-data"> 
 					<table width="350" border="0" cellpadding="1" cellspacing="1" class="box"> 
 						<tr>  
 							<td width="246"> 
@@ -127,17 +110,18 @@
 							</td> 
 						</tr> 
 					</table> 
-				</form> 
+				</form> -->
 				<div class="form-group float-label-control">
 					<label for="">Enter Resume as Text</label>
 					<textarea class="form-control" rows="5" name="user_resume" value="<?php echo $rws['user_resume'];?>"></textarea>
 				</div>
 			</div>
 			<div class="form-group float-label-control">                            
-				<label>
-					Import CoverLetter from Computer
-				</label>
-				<form method="post" enctype="multipart/form-data"> 
+				<div class="form-group float-label-control">
+					<label>Import CoverLetter from Computer</label>
+					<input name="upload" type="submit" class="box" id="upload" value=" Upload ">
+				</div>
+					<!--<form method="post" enctype="multipart/form-data"> 
 					<table width="350" border="0" cellpadding="1" cellspacing="1" class="box"> 
 						<tr>  
 							<td width="246"> 
@@ -149,19 +133,19 @@
 							</td> 
 						</tr> 
 					</table> 
-				</form> 
+				</form> -->
 				<div class="form-group float-label-control">
 					<label>Enter CoverLetter as Text</label>
 					<textarea class="form-control" rows="5" name="user_coverletter" value="<?php echo $rws['user_coverletter'];?>"></textarea>
 				</div>
 			</div>		
 		</div>
-		<div class="tab-pane fade in active" id="Education">         
+		<div class="tab-pane fade" id="education">         
 			<div class="col-md-6">
 				<div class="form-group float-label-control">                      
 					<div class="form-group float-label-control">                      
 						<label for="">School</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" name="user_school">
 					</div>
 					<div class="form-group float-label-control">  
 						<table>
@@ -172,16 +156,16 @@
 							</tr>
 							<tr>
 								<td>
-									<input id="date1" type="text" size="25">
+									<input id="date1" type="text" size="25" name="user_schoolsdate" placeholder="mm/dd/yyyy">
 									<a href="javascript:NewCal('date1','ddmmyyyy')">
-										<img src="images/cal.gif" width="16" height="16" border="0" alt="Pick a date">
+										<img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date">
 									</a>
 								</td>
 								<td>-</td>
 								<td>
-									<input id="date2" type="text" size="25">
+									<input id="date2" type="text" size="25" name="user_schooledate" placeholder="mm/dd/yyyy">
 									<a href="javascript:NewCal('date2','ddmmyyyy')">
-										<img src="images/cal.gif" width="16" height="16" border="0" alt="Pick a date">
+										<img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date">
 									</a>
 								</td>
 							</tr>
@@ -204,17 +188,17 @@
 					</div>
 					<div class="form-group float-label-control">
 						<label for="">Activities and Societies</label>
-						<textarea class="form-control" placeholder="<?php echo $rws['user_shortbio'];?>" rows="3" placeholder="<?php echo $rws['user_shortbio'];?>" name="activities" value="<?php echo $rws['user_shortbio'];?>"><?php echo $rws['user_shortbio'];?></textarea>
+						<textarea class="form-control" rows="3" name="activities" ></textarea>
 					</div>
 					<div class="form-group float-label-control">
 						<label for="">Description</label>
-						<textarea class="form-control" placeholder="<?php echo $rws['user_shortbio'];?>" rows="5" placeholder="<?php echo $rws['user_shortbio'];?>" name="Description" value="<?php echo $rws['user_shortbio'];?>"><?php echo $rws['user_shortbio'];?></textarea>
+						<textarea class="form-control" rows="5" name="Description" ></textarea>
 					</div>
 					<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />+ Add Education</button>
 				</div>
 			</div>   
 		</div>
-		<div class="tab-pane fade in active" id="Experience">         
+		<div class="tab-pane fade" id="experience">         
 			<div class="col-md-6">
 				<div class="form-group float-label-control">                      
 					<div class="form-group float-label-control">                      
@@ -233,13 +217,13 @@
 						<table>
 							<tr>
 								<td><label for="">Time Period</label></td>
-								<tr><td><input id="demo1" type="text" size="25"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src="images/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a></td><td>-</td><td><input id="demo1" type="text" size="25"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src="images/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a></td>
+								<tr><td><input id="demo1" type="text" size="25" placeholder="mm/dd/yyyy"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date"></a></td><td>-</td><td><input id="demo1" type="text" size="25" placeholder="mm/dd/yyyy"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date"></a></td>
 							</tr>
 						</table>
 					</div>	
 					<div class="form-group float-label-control">
 						<label for="">Description</label>
-						<textarea class="form-control" placeholder="<?php echo $rws['user_shortbio'];?>" rows="10" placeholder="<?php echo $rws['user_shortbio'];?>" name="user_shortbio" value="<?php echo $rws['user_shortbio'];?>"><?php echo $rws['user_shortbio'];?></textarea>
+						<textarea class="form-control" rows="10" name="user_shortbio" ></textarea>
 					</div>
 					<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />+ Add Position</button>
 				</div>
@@ -267,8 +251,7 @@
 	<br>
 	<div class="submit">
 		<center>
-			<input class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  name="submit"  value="SAVE CHANGES">
-			<input class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  name="submit"  value="NEXT">
+			<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  name="submit"  value="SAVE CHANGES">SAVE CHANGES</button>
 		</center>
 	</div>
 </form>

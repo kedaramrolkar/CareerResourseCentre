@@ -7,7 +7,7 @@
 			<h3 style="color:#65aeee;">Log In or <a href="index.php">Sign Up</a></h3>
 			<form role="form" action="components/login-process.php" method="post" name="login">
 				<div class="form-group">
-					<label for="inputUsernameEmail">Username or email</label>
+					<label for="inputUsernameEmail">Username</label>
 					<input type="text" class="form-control" id="inputUsernameEmail" name="username" placeholder="Username">
 				</div>
 				<div class="form-group">
