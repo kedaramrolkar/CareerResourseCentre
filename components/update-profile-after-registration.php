@@ -17,11 +17,11 @@
         $result = mysqli_query($database,"SELECT * FROM user WHERE user_username = '$user_username'");
         if( mysqli_num_rows($result) > 0) {
             mysqli_query($database,$sql3)or die(mysqli_error($database));
-            header("location:../update-bio-after-registration.php?user_username=$user_username&current_user=$user_username");
+            header("location:../edit-profile.php?user_username=$user_username");
         }
         else{
             mysqli_query($database,$sql3)or die(mysqli_error($database));
-            header("location:../update-bio-after-registration.php?user_username=$user_username&current_user=$user_username");
+            header("location:../edit-profile.php?user_username=$user_username");
         }  
     }    
 ?>

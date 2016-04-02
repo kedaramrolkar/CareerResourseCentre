@@ -24,10 +24,10 @@
 <?php
     $user_username =  $_GET['user_username'];
 ?>     
-    <hr>                 
-    <div class="submit">           
+    <br>                 
+    <div class="col-md-12 submit">           
         <center>
-            <button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />Save Your Profile</button>
+            <button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />Continue</button>
         </center>
     </div>
 </form>
