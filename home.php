@@ -30,7 +30,7 @@
         <div class="col-md-4">
             <ul class="nav text-center">
                 <li><a href="edit-profile.php">Edit your profile</a></li>
-                <li><a href="all-users.php">View all users</a></li>
+                <li><a href="all-users.php">Search Jobs</a></li>
                 <li><a href="components/logout.php">Logout</a></li>
                 <li></li>
                 <li></li>

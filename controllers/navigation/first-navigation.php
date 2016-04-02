@@ -13,7 +13,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="home.php"><b>Infismash</b></a>	        
+                <a class="navbar-brand" href="home.php"><b>Get Hired</b></a>	        
             </div>
 	        <div class="navbar-collapse collapse" id="navbar-collapse1">
 	           <ul class="nav navbar-nav">
@@ -23,7 +23,7 @@
 	           </ul>
                 <form class="navbar-form navbar-left" role="search" method="post" autocomplete="off" action="search-result.php">
                     <div class="form-group">
-                        <input type="text" class="search form-control" id="searchbox" placeholder="Search for People" name="search-form"/><br />
+                        <input type="text" class="search form-control" id="searchbox" placeholder="JOB Search" name="search-form"/><br />
                         <div id="display"></div>
 				    </div> 
 				</form>

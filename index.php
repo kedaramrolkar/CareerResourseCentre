@@ -14,8 +14,8 @@
                     </div>
                     <div class="row">
                     <div class="col-lg-6">
-                        <h1><b>know.me</b></h1>
-                        <h3>Tell your story to the whole world!</h3>
+                        <h1><b>Get Hired</b></h1>
+                        <h3>One stop solution to get you THE JOB</h3>
                         <br>
                         <?php include 'controllers/form/registration-form.php' ?>
                     </div>
