@@ -1,13 +1,8 @@
                     <form class="form col-md-12 center-block" action="components/registration.php" method="post" autocomplete="off">
                         <div class="row">     
-                            <div class="col-lg-6" style="z-index: 9;">
+                            <div class="col-lg-12" style="z-index: 9;">
                                 <div class="form-group">
-                                    <input type="text" class="form-control input-lg" placeholder="First Name" name="user_firstname" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" style="z-index: 9;">
-                                <div class="form-group">
-                                    <input type="text" class="form-control input-lg" placeholder="Last Name" name="user_lastname" required>
+                                    <input type="text" class="form-control input-lg" placeholder="Name" name="user_name" required>
                                 </div>
                             </div>
                         </div>

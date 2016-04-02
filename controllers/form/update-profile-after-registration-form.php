@@ -7,27 +7,15 @@
 ?>
     <div class="col-md-6">
         <div class="form-group float-label-control">
-            <label for="">First Name</label>
-            <input type="text" class="form-control" placeholder="<?php echo $rws['user_firstname'];?>" name="user_firstname" value="<?php echo $rws['user_firstname'];?>" required>
+            <label for="">Name</label>
+            <input type="text" class="form-control"  placeholder="<?php echo $rws['user_name'];?>" name="user_name" value="<?php echo $rws['user_name'];?>" required>
         </div>
         <div class="form-group float-label-control">
-            <label for="">Last Name</label>
-            <input type="text" class="form-control"  placeholder="<?php echo $rws['user_lastname'];?>" name="user_lastname" value="<?php echo $rws['user_lastname'];?>" required>
-        </div>
-        <!--<div class="form-group float-label-control">
             <label for="">UF ID:</label>
-            <input type="text" class="form-control"  placeholder="<?php echo $rws['user_ufid'];?>" name="user_lastname" value="<?php echo $rws['user_ufid'];?>" required>
-        </div> -->         
+            <input type="text" class="form-control"  placeholder="<?php echo $rws['user_ufid'];?>" name="user_ufid" value="<?php echo $rws['user_ufid'];?>" required>
+        </div>
     </div>    
     <div class="col-md-6">
-        <label for="">Username</label>
-        <div class="form-group float-label-control">
-            <input type="text" class="form-control"  placeholder="<?php echo $rws['user_username'];?>" name="user_username" value="<?php echo $rws['user_username'];?>" required>
-        </div>
-        <div class="form-group float-label-control">
-            <label for="">Password</label>
-            <input type="password" class="form-control" placeholder="<?php echo $rws['user_password'];?>" name="user_password" value="<?php echo $rws['user_password'];?>" required>
-        </div>
         <div class="form-group float-label-control">
             <label for="">Email</label>
             <input type="text" class="form-control" placeholder="<?php echo $rws['user_email'];?>" name="user_email" value="<?php echo $rws['user_email'];?>" required>
