@@ -29,7 +29,7 @@
 				</form>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $row['user_firstname'];?> <?php echo $row['user_lastname'];?><strong class="caret"></strong></a>                  
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $row['user_name'];?> <strong class="caret"></strong></a>                  
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="edit-profile.php"><i class="fa fa-edit"></i> Edit Profile</a>
