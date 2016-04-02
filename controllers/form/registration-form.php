@@ -18,12 +18,19 @@
                             </div>
                          </div>
                      </div>
+                      <div class="row">     
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                                <input type="ufid" class="form-control input-lg" placeholder="UFID" name="user_ufid" required>
+                            </div>
+                         </div>
+                     </div>
                      <div class="row">   
                          <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">
-                                        <!-- http://<?php echo $rws['domain_websiteaddress'];?>/user_username= --> know.me/
+                                        <!-- http://<?php echo $rws['domain_websiteaddress'];?>/user_username= --> get.hired/
                                     </span>
                                     <input type="username" class="form-control input-lg" placeholder="username" name="user_username" id="user_username" required> 
                                     <span class="input-group-addon" id="status"></span>
