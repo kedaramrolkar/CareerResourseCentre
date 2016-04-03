@@ -21,27 +21,17 @@
                        <a href="home.php"><i class="fa fa-home"></i> Home</a>
                    </li>
 	           </ul>
-                <form class="navbar-form navbar-left" role="search" method="post" autocomplete="off" action="search-result.php">
-                    <div class="form-group">
-                        <input type="text" class="search form-control" id="searchbox" placeholder="JOB Search" name="search-form"/><br />
-                        <div id="display"></div>
-				    </div> 
-				</form>
-                <ul class="nav navbar-nav navbar-right">
+               <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $row['user_name'];?> <strong class="caret"></strong></a>                  
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="edit-profile.php"><i class="fa fa-edit"></i> Edit Profile</a>
                             </li>
-                        </ul>
-                    </li>	
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-bars" style="font-size: 1.27em;"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
+							<li>
+                                <a href="all-users.php"><i class="fa fa-edit"></i> Search Jobs</a>
+                            </li>
+							<li>
                                 <a href="components/logout.php"><i class="fa fa-mail-reply"></i> Logout</a>
                             </li>
                         </ul>
