@@ -43,7 +43,7 @@
 					<input type="radio" name="user_gender" value="male" <?php if($rws['user_gender'] == 'male'){echo("checked");}?>> Male
 					<input type="radio" name="user_gender" value="female" <?php if($rws['user_gender'] == 'female'){echo("checked");}?>> Female
 				</div>
-				<div>	
+				<div class="form-group float-label-control">	
 					<label for="">Veteran Status</label>	
 					<select name="user_veteran" >
 						<option value="no" <?php if($rws['user_veteran'] == 'no'){echo("selected");}?>>No. I am not a Veteran</option>
@@ -81,7 +81,7 @@
 						<option value="disclose" <?php if($rws['user_disability'] == 'disclose'){echo("selected");}?>>I do not want to disclose</option>
 					</select>
 				</div>
-				<div>	
+				<div class="form-group float-label-control">	
 					<label for="">Visa Status</label>	
 					<select name="user_visa">
 						<option value="F1" <?php if($rws['user_visa'] == 'F1'){echo("selected");}?>>F1</option>
@@ -141,62 +141,66 @@
 			</div>		
 		</div>
 		<div class="tab-pane fade" id="education">         
-			<div class="col-md-6">
+			<div class="col-md-6">                    
 				<div class="form-group float-label-control">                      
-					<div class="form-group float-label-control">                      
-						<label for="">School</label>
-						<input type="text" class="form-control" name="user_school">
-					</div>
-					<div class="form-group float-label-control">  
-						<table>
-							<tr>
-								<th>
-									<label for="">Dates Attended</label>
-								</th>
-							</tr>
-							<tr>
-								<td>
-									<input id="date1" type="text" size="25" name="user_schoolsdate" placeholder="mm/dd/yyyy">
-									<a href="javascript:NewCal('date1','ddmmyyyy')">
-										<img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date">
-									</a>
-								</td>
-								<td>-</td>
-								<td>
-									<input id="date2" type="text" size="25" name="user_schooledate" placeholder="mm/dd/yyyy">
-									<a href="javascript:NewCal('date2','ddmmyyyy')">
-										<img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date">
-									</a>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div>	
-						<label for="">Degree</label>	
-						<select>
-							<option value="Batchelors">Batchelors</option>
-							<option value="Masters">Masters</option>  
-						</select>
-					</div>
-					<div class="form-group float-label-control">                      
-						<label for="">Field of Study</label>
-						<input type="text" class="form-control">
-					</div>
-					<div class="form-group float-label-control">                      
-						<label for="">Grade</label>
-						<input type="text" class="form-control">
-					</div>
-					<div class="form-group float-label-control">
-						<label for="">Activities and Societies</label>
-						<textarea class="form-control" rows="3" name="activities" ></textarea>
-					</div>
-					<div class="form-group float-label-control">
-						<label for="">Description</label>
-						<textarea class="form-control" rows="5" name="Description" ></textarea>
-					</div>
-					<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />+ Add Education</button>
+					<label for="">School</label>
+					<input type="text" class="form-control" name="user_school">
+				</div>
+				<div class="form-group float-label-control">	
+					<label for="">Degree</label></br>	
+					<select>
+						<option value="Batchelors">Batchelors</option>
+						<option value="Masters">Masters</option>  
+					</select>
+				</div>
+				<div class="form-group float-label-control">                      
+					<label for="">Grade</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group float-label-control">
+					<label for="">Activities and Societies</label>
+					<textarea class="form-control" rows="3" name="activities" ></textarea>
 				</div>
 			</div>   
+			<div class="col-md-6">
+				<div class="form-group float-label-control">                      
+					<label for="">Location</label>
+					<input type="text" class="form-control" name="user_schlocal">
+				</div>
+				<div class="form-group float-label-control">  
+					<table>
+						<tr>
+							<th>
+								<label for="">Dates Attended</label>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<input id="date1" type="text" size="25" name="user_schoolsdate" placeholder="mm/dd/yyyy">
+								<a href="javascript:NewCal('date1','ddmmyyyy')">
+									<img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date">
+								</a>
+							</td>
+							<td>-</td>
+							<td>
+								<input id="date2" type="text" size="25" name="user_schooledate" placeholder="mm/dd/yyyy">
+								<a href="javascript:NewCal('date2','ddmmyyyy')">
+									<img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date">
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form-group float-label-control">                      
+					<label for="">Field of Study</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group float-label-control">
+					<label for="">Description</label>
+					<textarea class="form-control" rows="3" name="Description" ></textarea>
+				</div>
+			</div>
+			<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload">+ Add Education</button>
 		</div>
 		<div class="tab-pane fade" id="experience">         
 			<div class="col-md-6">
@@ -206,11 +210,11 @@
 						<input type="text" class="form-control">
 					</div>
 					<div class="form-group float-label-control">
-						<label for="">Title</label> 
+						<label for="">Location</label> 
 						<input type="text" class="form-control">
 					</div> 
 					<div class="form-group float-label-control">
-						<label for="">Location</label> 
+						<label for="">Title</label> 
 						<input type="text" class="form-control">
 					</div> 
 					<div class="form-group float-label-control">  
@@ -221,16 +225,20 @@
 							</tr>
 						</table>
 					</div>	
+				</div>
+			</div> 
+			<div class="col-md-6">
+				<div class="form-group float-label-control">                      
 					<div class="form-group float-label-control">
 						<label for="">Description</label>
-						<textarea class="form-control" rows="10" name="user_shortbio" ></textarea>
+						<textarea class="form-control" rows="9" name="user_shortbio" ></textarea>
 					</div>
-					<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />+ Add Position</button>
 				</div>
-			</div>   
+			</div>
+			<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />+ Add Position</button>
 		</div>
 		<div class="tab-pane fade" id="add_info">
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div>	
 					<label for="">Languages</label>	
 					<select>
