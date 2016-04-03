@@ -28,7 +28,7 @@
 				</div> 
 				<div class="form-group float-label-control">  
 					<label for="">Current Address</label>
-					<textarea rows="2"  name="user_currentaddress" placeholder="<?php echo $rws['user_currentaddress'];?>" value="<?php echo $rws['user_currentaddress'];?>"><?php echo $rws['user_currentaddress'];?></textarea>
+					<textarea rows="4"  name="user_currentaddress" placeholder="<?php echo $rws['user_currentaddress'];?>" value="<?php echo $rws['user_currentaddress'];?>"><?php echo $rws['user_currentaddress'];?></textarea>
 					&nbsp;&nbsp;&nbsp;
 					<label for="">Country</label>	
 					<select name="user_currentcountry" >
@@ -63,7 +63,7 @@
 				</div>
 				<div class="form-group float-label-control">  
 					<label>Permanent Address</label>
-					<textarea name="user_permanentaddress" rows="2" placeholder="<?php echo $rws['user_permanentaddress'];?>" value="<?php echo $rws['user_permanentaddress'];?>"><?php echo $rws['user_permanentaddress'];?></textarea>
+					<textarea name="user_permanentaddress" rows="4" placeholder="<?php echo $rws['user_permanentaddress'];?>" value="<?php echo $rws['user_permanentaddress'];?>"><?php echo $rws['user_permanentaddress'];?></textarea>
 					&nbsp;&nbsp;&nbsp;
 					<label >Country</label>	
 					<select  name="user_permanentcountry" >
@@ -74,14 +74,6 @@
 					</select>
 				</div>
 				<div class="form-group float-label-control">	
-					<label >Disability</label>	
-					<select  name="user_disability">
-						<option value="no" <?php if($rws['user_disability'] == 'np'){echo("selected");}?>>No. I do not have Disability</option>
-						<option value="yes" <?php if($rws['user_disability'] == 'yes'){echo("selected");}?>>Yes. I have a Disability</option>
-						<option value="disclose" <?php if($rws['user_disability'] == 'disclose'){echo("selected");}?>>I do not want to disclose</option>
-					</select>
-				</div>
-				<div class="form-group float-label-control">	
 					<label for="">Visa Status</label>	
 					<select name="user_visa">
 						<option value="F1" <?php if($rws['user_visa'] == 'F1'){echo("selected");}?>>F1</option>
@@ -89,7 +81,15 @@
 						<option value="G1" <?php if($rws['user_visa'] == 'G1'){echo("selected");}?>>G1</option>
 						<option value="G2" <?php if($rws['user_visa'] == 'G2'){echo("selected");}?>>G2</option>
 					</select>
-				</div>                 
+				</div> 
+				<div class="form-group float-label-control">	
+					<label >Disability</label>	
+					<select  name="user_disability">
+						<option value="no" <?php if($rws['user_disability'] == 'np'){echo("selected");}?>>No. I do not have Disability</option>
+						<option value="yes" <?php if($rws['user_disability'] == 'yes'){echo("selected");}?>>Yes. I have a Disability</option>
+						<option value="disclose" <?php if($rws['user_disability'] == 'disclose'){echo("selected");}?>>I do not want to disclose</option>
+					</select>
+				</div>                
 			</div>
 		</div>
 		<div class="tab-pane fade" id="resume">
