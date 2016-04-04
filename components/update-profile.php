@@ -20,7 +20,7 @@
 		
         $sql3="UPDATE user SET user_name='$user_name',user_currentaddress='$user_currentaddress',user_currentcountry='$user_currentcountry',
 		user_veteran='$user_veteran',user_ufid='$user_ufid',user_phno='$user_phno',user_permanentaddress='$user_permanentaddress',user_gender='$user_gender',
-		user_permanentcountry='$user_permanentcountry',user_disability='$user_disability',user_visa='$user_visa' where user_username='$temp'";
+		user_permanentcountry='$user_permanentcountry',user_disability='$user_disability',user_visa='$user_visa',p1=1 where user_username='$temp'";
         mysqli_query($database,$sql3)or die(mysqli_error($database));
 		header("location:../edit-profile.php?user_username=$temp&request=profile-update&status=success");
     }    

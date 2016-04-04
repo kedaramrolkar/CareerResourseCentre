@@ -32,7 +32,7 @@
 						<tr><td style='font-size:16px;'><b>WHERE</b></td></tr>
 						<tr><td><input name='q' value='' size='15' ></td></tr>
 						<tr><td style='font-size:10px'>city, state, zip</td></tr>
-						<tr><td><input type='submit' value='Find Jobs'></td></tr>
+						
 					</table>
 				</div>
 				<div class="form-group float-label-control">
@@ -113,17 +113,7 @@
 					<input type="radio" name="relocate" value="Yes"> Use All
 					<input type="radio" name="relocate" value="No"> Use Any
 				</div>	
-				<div class="form-group float-label-control">                      
-					<table cellspacing='2' style='font-family:arial'>
-						<tr><td style='font-size:16px;'><b>WHAT</b></td></tr>
-						<tr><td><input name='q' value='' size='15'></td></tr>
-						<tr><td style='font-size:10px'>job title, keywords</td></tr>
-						<tr><td style='font-size:16px;'><b>WHERE</b></td></tr>
-						<tr><td><input name='q' value='' size='15' ></td></tr>
-						<tr><td style='font-size:10px'>city, state, zip</td></tr>
-						<tr><td><input type='submit' value='Find Jobs'></td></tr>
-					</table>
-				</div>
+				
 				<div class="form-group float-label-control">
 					<label for="">Location Preferences(Upto 3)</label> 
 					<input type="text" class="form-control" name="user_email"><br>

@@ -6,6 +6,10 @@
 		<li><a href="#education" data-toggle="tab">Education</a></li>
 		<li><a href="#experience" data-toggle="tab">Experience</a></li>
 		<li><a href="#add_info" data-toggle="tab">Additional Info</a></li>
+		<li>
+			<progress style="margin-top: 0.7em;"  value="<?php echo $rws['p1']+ $rws['p2']+ $rws['p3']+ $rws['p4']+ $rws['p5']; ?>" max="5"></progress>
+			<span><?php echo ($rws['p1']+ $rws['p2']+ $rws['p3']+ $rws['p4']+ $rws['p5'])*20; ?>% Complete</span>
+		</li>
     </ul>
 	
     <!-- Tab panes -->
@@ -19,18 +23,18 @@
 			</div>   
 			<div class="col-md-6">
 				<div class="form-group float-label-control">                      
-					<label for="">Name</label>
+					<label >Name</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input type="text" class="form-control" name="user_name" placeholder="<?php echo $rws['user_name'];?>" value="<?php echo $rws['user_name'];?>">
 				</div>
 				<div class="form-group float-label-control">
-					<label for="">Email</label> 
+					<label for="">Email</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input type="text" class="form-control" name="user_email" placeholder="<?php echo $rws['user_email'];?>" value="<?php echo $rws['user_email'];?>">
 				</div> 
 				<div class="form-group float-label-control">  
-					<label for="">Current Address</label>
+					<label for="">Current Address</label><span style="font-weight: bold;color: #e32"> *</span>
 					<textarea rows="4"  name="user_currentaddress" placeholder="<?php echo $rws['user_currentaddress'];?>" value="<?php echo $rws['user_currentaddress'];?>"><?php echo $rws['user_currentaddress'];?></textarea>
 					&nbsp;&nbsp;&nbsp;
-					<label for="">Country</label>	
+					<label for="">Country</label><span style="font-weight: bold;color: #e32"> *</span>	
 					<select name="user_currentcountry" >
 						<option value="US" <?php if($rws['user_currentcountry'] == 'US'){echo("selected");}?>>US</option>
 						<option value="INDIA" <?php if($rws['user_currentcountry'] == 'INDIA'){echo("selected");}?>>INDIA</option>
@@ -39,7 +43,7 @@
 					</select>
 				</div>
 				<div class="form-group float-label-control">  
-					<label for="">Gender</label>
+					<label for="">Gender</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input type="radio" name="user_gender" value="male" <?php if($rws['user_gender'] == 'male'){echo("checked");}?>> Male
 					<input type="radio" name="user_gender" value="female" <?php if($rws['user_gender'] == 'female'){echo("checked");}?>> Female
 				</div>
@@ -54,7 +58,7 @@
 			</div>  
 			<div class="col-md-6">
 				<div class="form-group float-label-control">
-					<label >Id</label>
+					<label >Id</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input name="user_ufid" type="text" class="form-control" placeholder="<?php echo $rws['user_ufid'];?>" value="<?php echo $rws['user_ufid'];?>">
 				</div>
 				<div class="form-group float-label-control">
@@ -143,13 +147,13 @@
 		<div class="tab-pane fade" id="education">         
 			<div class="col-md-6">                    
 				<div class="form-group float-label-control">                      
-					<label for="">School</label>
+					<label for="">School</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input type="text" class="form-control" name="user_school">
 				</div>
 				<div class="form-group float-label-control">	
-					<label for="">Degree</label></br>	
+					<label for="">Degree</label><span style="font-weight: bold;color: #e32"> *</span></br>	
 					<select>
-						<option value="Batchelors">Batchelors</option>
+						<option value="Bachelors">Bachelors</option>
 						<option value="Masters">Masters</option>  
 					</select>
 				</div>
@@ -171,7 +175,7 @@
 					<table>
 						<tr>
 							<th>
-								<label for="">Dates Attended</label>
+								<label for="">Dates Attended</label><span style="font-weight: bold;color: #e32"> *</span>
 							</th>
 						</tr>
 						<tr>
@@ -192,7 +196,7 @@
 					</table>
 				</div>
 				<div class="form-group float-label-control">                      
-					<label for="">Field of Study</label>
+					<label for="">Field of Study</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input type="text" class="form-control">
 				</div>
 				<div class="form-group float-label-control">
@@ -206,7 +210,7 @@
 			<div class="col-md-6">
 				<div class="form-group float-label-control">                      
 					<div class="form-group float-label-control">                      
-						<label for="">Company Name</label>
+						<label for="">Company Name</label><span style="font-weight: bold;color: #e32"> *</span>
 						<input type="text" class="form-control">
 					</div>
 					<div class="form-group float-label-control">
@@ -214,13 +218,13 @@
 						<input type="text" class="form-control">
 					</div> 
 					<div class="form-group float-label-control">
-						<label for="">Title</label> 
+						<label for="">Title</label><span style="font-weight: bold;color: #e32"> *</span>
 						<input type="text" class="form-control">
 					</div> 
 					<div class="form-group float-label-control">  
 						<table>
 							<tr>
-								<td><label for="">Time Period</label></td>
+								<td><label for="">Time Period</label><span style="font-weight: bold;color: #e32"> *</span></td>
 								<tr><td><input id="demo1" type="text" size="25" placeholder="mm/dd/yyyy"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date"></a></td><td>-</td><td><input id="demo1" type="text" size="25" placeholder="mm/dd/yyyy"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src="controllers/form/calendar.png" width="16" height="16" border="0" alt="Pick a date"></a></td>
 							</tr>
 						</table>
@@ -249,7 +253,7 @@
 					</select>
 				</div>
 				<div class="form-group float-label-control">  
-					<label for="">Relocation Preference</label>
+					<label for="">Relocation Preference</label><span style="font-weight: bold;color: #e32"> *</span>
 					<input type="radio" name="relocate" value="Yes"> Yes
 					<input type="radio" name="relocate" value="No"> No
 				</div>	
