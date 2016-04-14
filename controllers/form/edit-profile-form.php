@@ -1,5 +1,6 @@
 <form action="components/update-profile.php" method="post" enctype="multipart/form-data" id="UploadForm">
     <!-- Nav tabs -->
+	
     <ul class="nav nav-tabs">
 		<li class="active"><a href="#PrimaryInformation" data-toggle="tab">Primary Information</a></li>
 		<li><a href="#resume" data-toggle="tab">Resume</a></li>
@@ -62,7 +63,7 @@
 					<input name="user_ufid" type="text" class="form-control" placeholder="<?php echo $rws['user_ufid'];?>" value="<?php echo $rws['user_ufid'];?>">
 				</div>
 				<div class="form-group float-label-control">
-					<label >Ph No</label>
+					<label>Ph No</label>
 					<input name="user_phno" type="text" class="form-control" placeholder="<?php echo $rws['user_phno'];?>" value="<?php echo $rws['user_phno'];?>">
 				</div>
 				<div class="form-group float-label-control">  
@@ -163,7 +164,7 @@
 				</div>
 				<div class="form-group float-label-control">
 					<label for="">Activities and Societies</label>
-					<textarea class="form-control" rows="3" name="activities" ></textarea>
+					<textarea class="form-control" rows="3" name="activities" placeholder="Write about Activites and societies you were part of" ></textarea>
 				</div>
 			</div>   
 			<div class="col-md-6">
@@ -201,7 +202,7 @@
 				</div>
 				<div class="form-group float-label-control">
 					<label for="">Description</label>
-					<textarea class="form-control" rows="3" name="Description" ></textarea>
+					<textarea class="form-control" rows="3" name="Description" placeholder="Write about Projects, skills, Acheivements, Certifications, Awards" ></textarea>
 				</div>
 			</div>
 			<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload">+ Add Education</button>
@@ -263,6 +264,8 @@
 	<br>
 	<div class="submit">
 		<center>
+			<input class="btn btn-primary ladda-button" data-style="zoom-in"  name="cancel"  onclick="window.location='/CareerResourceCentre/edit-profile.php'" value="RESET"></input>
+			<input class="btn btn-primary ladda-button" data-style="zoom-in"  name="cancel"  onclick="window.location='/CareerResourceCentre/home.php'" value="CANCEL"></input>
 			<button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  name="submit"  value="SAVE CHANGES">SAVE CHANGES</button>
 		</center>
 	</div>

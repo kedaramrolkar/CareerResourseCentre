@@ -21,6 +21,17 @@
                        <a href="home.php"><i class="fa fa-home"></i> Home</a>
                    </li>
 	           </ul>
+			   <ul class="nav navbar-nav">
+	               <li>
+                       <br><?php 
+					   if($_SERVER['REQUEST_URI']=='/CareerResourceCentre/edit-profile.php') 
+						   echo 'EDIT PROFILE';
+					   else if($_SERVER['REQUEST_URI']=='/CareerResourceCentre/all-users.php')
+						   echo 'JOB SEARCH';
+					   ?>
+                   </li>
+	           </ul>
+			   
                <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $row['user_name'];?> <strong class="caret"></strong></a>                  
